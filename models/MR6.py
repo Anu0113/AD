@@ -72,9 +72,8 @@ if st.session_state.page == "welcome":
 set_bg_image("https://www.itl.cat/pngfile/big/46-465731_streaming-movies.jpg")
 
 # Load movie data
-movie_list_dict = pickle.load(open('movie_list_dict.pkl', 'rb'))
-similarity = pickle.load(open('similarity.pkl', 'rb'))
-
+similarity = pickle.load(open(r'C:\Users\anush\models\similarity.pkl', 'rb'))
+movie_list_dict = pickle.load(open(r'C:\Users\anush\models\movie_list_dict.pkl', 'rb'))
 movie_list = pd.DataFrame(movie_list_dict)
 
 def fetch_poster(movie_id):
